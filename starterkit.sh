@@ -3,6 +3,13 @@ sudo apt install gcc g++ make curl neofetch tree -y
 
 # git and stuff
 sudo apt install git
+git config --global user.name "29-29"
+git config --global user.email "ackx29sodo@gmail.com"
+
+sudo apt install pass
+git config --global credential.credentialStore gpg
+pass init 4EFAF11709ABA0875A5C9AE951B3B77D19B8B6B9
+git credential-manager github login
 
 ## lazygit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
