@@ -34,4 +34,7 @@ sudo apt install tmux neovim -y
 # oh-my-zsh
 sudo apt install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+mv ./.zshrc ~/.zshrc
 
+# node js
+sudo apt install nodejs npm
